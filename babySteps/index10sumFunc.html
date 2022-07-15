@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiplier</title>
+</head>
+<body>
+    <div>
+        
+    </div>
+    <button onclick="startcalc()">Click to start</button>
+</body>
+<script>
+    let x , y , z , sum
+    function startcalc(){
+        x = prompt('enter x');
+        y = prompt('enter y');
+        z = prompt('enter z');
+        sum = x * y * z;
+        let _x = document.createElement('span');
+        _x.innerHTML=('answer is ' + sum)
+        document.getElementsByTagName('div')[0].appendChild(_x);
+        console.log(_x).innerHTML
+    }
+</script>
+</html>

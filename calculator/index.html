@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="displaypad">
+                <div class="display">
+                    <!-- ----------------- --> 0
+                </div>
+            </div>
+            <div class="btnpad">
+                <div class="otherpad">
+                    <button onclick="cleanall()" id="allClearbtn" class="other_actions">AC</button>
+                    <button onclick="negpos()" id="negposbtn" class="other_actions"><i class="bi bi-plus-slash-minus"></i></button>
+                    <button onclick="percent()" id="percentbtn" class="other_actions"><i class="bi bi-percent"></i></button>
+                </div>
+                <div class="numpad">
+                    <button onclick="num(this)" id="sevenbtn" class="number">7</button>
+                    <button onclick="num(this)" id="eightbtn" class="number">8</button>
+                    <button onclick="num(this)" id="ninebtn" class="number">9</button>
+                    <button onclick="num(this)" id="fourbtn" class="number">4</button>
+                    <button onclick="num(this)" id="fivebtn" class="number">5</button>
+                    <button onclick="num(this)" id="sixbtn" class="number">6</button>
+                    <button onclick="num(this)" id="onebtn" class="number">1</button>
+                    <button onclick="num(this)" id="twobtn" class="number">2</button>
+                    <button onclick="num(this)" id="threebtn" class="number">3</button>
+
+                    <button onclick="num(this)" id="zerobtn" class="number">0</button>
+                </div>
+                <div class="actpad">
+                    <button onclick="opr(this)" id="plusbtn" class="action">+</button>
+                    <button onclick="opr(this)" id="minusbtn" class="action">-</button>
+                    <button onclick="opr(this)" id="multiplybtn" class="action">*</button>
+                    <button onclick="opr(this)" id="divisionbtn" class="action">/</button>
+                    <button onclick="oprequ()" id="equalbtn" class="action">=</button>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="master.js"></script>
+</html>
